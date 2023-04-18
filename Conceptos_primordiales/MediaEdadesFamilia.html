@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Media edades Familia</h1>
+<script>
+  function SaltarLinea(){
+    document.write("<br>");
+  }
+  function imprimir(frase){
+    document.write(frase);
+    SaltarLinea();
+  }
+  var numero=parseInt(prompt("ingrese la edad de sus mienbros de su familia"));
+  var conta=1;var edad =0;
+  while (conta<=numero){
+    dato=parseInt(prompt("ingrese la edad numero :"+conta))
+    edad=edad+dato;
+    conta++;
+  }
+  var mediatotal=edad/numero;
+  imprimir(mediatotal)
+  /*var edadP=42;
+  var edadM=38;
+  var edadH=15;
+  var edadHa=12;
+  var totaledad= edadP+edadM+edadH+edadHa;
+  var media=totaledad/4;
+  imprimir(media)*/
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego Adivinacion</title>
+</head>
+<body>
+<h1>Juego de Adivinacion</h1>
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+    }
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+    var num=Math.round(Math.random()*10);
+    var numero=parseInt(prompt("ingrese un numero entre 0 y 10"))
+    if (num==numero){
+        imprimir("Acerto")
+    }
+    if (num!=numero){
+        imprimir("no Acerto el numero era "+num);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mejorando IMC</title>
+</head>
+<body>
+<h1>Mejorando IMC</h1>
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+    }15
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea()
+    }
+    function calcularimc(peso,altura){
+        imc=peso/(altura*altura);
+        return(imc);
+    }
+    pesoAivan=99
+    alturaAivan=1.72
+    //imcAivan=pesoAivan/(alturaAivan*alturaAivan)
+    Aivan = calcularimc(pesoAivan,alturaAivan)
+    imprimir(Aivan)
+
+    if (puntosTotal>puntosPasado){
+        imprimir("El equipo esta mejor que el anio pasado");
+    }
+    else {
+        if (puntosTotal==puntosPasado){
+            imprimir("El equipo esta igual que el anio pasado");
+        }
+        else {
+            if (puntosTotal<puntosPasado){
+                imprimir("El equipo esta peor que el anio pasado")
+            }
+        }
+    }
+</script>
+</body>
+</html>

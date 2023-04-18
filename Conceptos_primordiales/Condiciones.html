@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Condiciones</title>
+</head>
+<body>
+<h1>Condiciones</h1>
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+    }15
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea()
+    }
+    var puntosPasado=parseInt(prompt("Informe la cantidad de puntos que tuviste el anio pasado"));
+    var victorias = parseInt(prompt("informe la cantidad de victorias:"));
+    var empates = parseInt(prompt("informe la cantidad de empates:"));
+    puntosTotal=victorias*3 + empates;
+    imprimir("los puntos total son: "+ puntosTotal);
+    if (puntosTotal>puntosPasado){
+        imprimir("El equipo esta mejor que el anio pasado");
+    }
+    else {
+        if (puntosTotal==puntosPasado){
+            imprimir("El equipo esta igual que el anio pasado");
+        }
+        else {
+            if (puntosTotal<puntosPasado){
+                imprimir("El equipo esta peor que el anio pasado")
+            }
+        }
+    }
+</script>
+</body>
+</html>
