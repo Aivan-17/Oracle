@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Reserva de Horarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        .time-slot {
+            cursor: pointer;
+        }
+
+        .selected {
+            background-color: #e0e0e0;
+        }
+
+        .disabled {
+            background-color: #f0f0f0;
+            cursor: not-allowed;
+        }
+
+        .btn-submit {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Sistema de Reserva de Horarios</h1>
+    <p>Selecciona un horario disponible:</p>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sábado</th>
+            <th>Domingo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Generar filas para los horarios de 7 am a 9 pm -->
+        <!-- Intervalo de 1 hora -->
+        <!-- Cambiar los días y los horarios según sea necesario -->
+        <!-- Agregar más filas para otros días de la semana -->
+        <!-- Agregar más columnas para otros horarios si es necesario -->
+        <!-- Aquí se generan solo hasta las 9 pm (21 horas) -->
+        <!-- Puedes ajustar el rango horario según tus necesidades -->
+
+        <!-- Horarios de 7 am a 9 pm (de 7 a 21 horas) -->
+        <!-- Intervalo de 1 hora -->
+        <!-- Cambiar los días y los horarios según sea necesario -->
+        <!-- Agregar más filas para otros días de la semana -->
+        <!-- Agregar más columnas para otros horarios si es necesario -->
+        <!-- Aquí se generan solo hasta las 9 pm (21 horas) -->
+        <!-- Puedes ajustar el rango horario según tus necesidades -->
+        <tr>
+            <td>7   am</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>8   am</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>9 am</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>10 am</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>11 am</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>12 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>1 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>2 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>3 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>4 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>5 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>6 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>7 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>8 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <tr>
+            <td>9 pm</td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+            <td class="time-slot"></td>
+        </tr>
+        <!-- Agrega más filas para los demás horarios hasta las 9 pm -->
+
+        </tbody>
+    </table>
+
+    <button class="btn-submit">Reservar</button>
+</div>
+
+<script>
+    const timeSlots = document.getElementsByClassName("time-slot");
+    const btnSubmit = document.getElementsByClassName("btn-submit")[0];
+
+    for (let i = 0; i < timeSlots.length; i++) {
+        timeSlots[i].addEventListener("click", function() {
+            if (this.classList.contains("selected")) {
+                this.classList.remove("selected");
+            } else {
+                // Verificar si el horario ya está reservado
+                if (!this.classList.contains("disabled")) {
+                    this.classList.add("selected");
+                }
+            }
+        });
+    }
+
+    btnSubmit.addEventListener("click", function() {
+        const selectedSlots = document.getElementsByClassName("selected");
+
+        if (selectedSlots.length > 0) {
+            let reservedSlots = "Horarios reservados:\n";
+
+            for (let i = 0; i < selectedSlots.length; i++) {
+                reservedSlots += selectedSlots[i].parentElement.firstChild.textContent + " - " + selectedSlots[i].parentElement.firstChild.nextSibling.textContent + "\n";
+            }
+
+            alert(reservedSlots);
+        } else {
+            alert("No has seleccionado ningún horario.");
+        }
+    });
+</script>
+</body>
+</html>
